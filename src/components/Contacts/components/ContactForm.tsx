@@ -3,11 +3,6 @@ import * as yup from 'yup';
 
 import { ContactFormI } from 'interface/interfaces';
 import { useTranslation } from 'react-i18next';
-//import sgMail from '@sendgrid/mail';
-
-const sgMail = require('@sendgrid/mail');
-
-sgMail.setApiKey('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');
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -20,28 +15,6 @@ const ContactForm = () => {
     },
     onSubmit(values) {
       console.log(values)
-      
-      const msg = {
-        to: 'ksenia.pilguy@gmail.com',
-        from: values.email,
-        subject: `Message from ${values.name} to Front-End developers Agency`,
-        text: values.message,
-        html: `
-          <strong>Message from ${values.name}</strong> <br />
-          <p>${values.message}</p>
-        `,
-      };
-      (async () => {
-        try {
-          await sgMail.send(msg);
-        } catch (error: any) {
-          console.error(error);
-
-          if (error.response) {
-            console.error(error.response.body)
-          }
-        }
-      })();
     },
     validationSchema: yup.object().shape({
       name: yup.string().required().min(2).max(255),

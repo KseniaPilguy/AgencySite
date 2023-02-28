@@ -30,7 +30,7 @@ const Header = () => {
     <div className={`header ${isHeaderHasOpacity ? "opacity" : ""}`}>
       <div className="header_container flex">
         <div className="wrapper flex">
-          <h1>LOGO</h1>
+          <h1></h1>
           
           {isTabletOrMobile ? (
             <div className="burger_menu_container" onClick={handleOpenMobile}>
@@ -38,7 +38,7 @@ const Header = () => {
             </div>
           ) : (
             <div className="navigation_menu flex">
-              <a href={`${process.env.HOSTED_LINK}/#services`}>{t("header.services")}</a>
+              <a href={`${process.env.HOSTED_LINK}#services`}>{t("header.services")}</a>
               <a href="/#projects">{t("header.projects")}</a>
               <a href="/#team">{t("header.team")}</a>
               <a href="/#clients">{t("header.clients")}</a>

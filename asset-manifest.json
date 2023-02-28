@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AgencySite/static/css/main.8ffa8c72.css",
-    "main.js": "/AgencySite/static/js/main.2770ec61.js",
+    "main.js": "/AgencySite/static/js/main.44c14d63.js",
     "static/media/flower-proj.png": "/AgencySite/static/media/flower-proj.8cc839f28f053b5397c7.png",
     "static/media/sport-proj.png": "/AgencySite/static/media/sport-proj.af1c4600821d4cd1d2fc.png",
     "static/media/article-proj.png": "/AgencySite/static/media/article-proj.10e8704694957cb8c36b.png",
@@ -18,10 +18,10 @@
     "index.html": "/AgencySite/index.html",
     "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.8ffa8c72.css.map": "/AgencySite/static/css/main.8ffa8c72.css.map",
-    "main.2770ec61.js.map": "/AgencySite/static/js/main.2770ec61.js.map"
+    "main.44c14d63.js.map": "/AgencySite/static/js/main.44c14d63.js.map"
   },
   "entrypoints": [
     "static/css/main.8ffa8c72.css",
-    "static/js/main.2770ec61.js"
+    "static/js/main.44c14d63.js"
   ]
 }

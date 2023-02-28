@@ -1,3 +1,4 @@
+import { env } from "process";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
@@ -37,7 +38,7 @@ const Header = () => {
             </div>
           ) : (
             <div className="navigation_menu flex">
-              <a href="/#services">{t("header.services")}</a>
+              <a href={`${process.env.HOSTED_LINK}/#services`}>{t("header.services")}</a>
               <a href="/#projects">{t("header.projects")}</a>
               <a href="/#team">{t("header.team")}</a>
               <a href="/#clients">{t("header.clients")}</a>

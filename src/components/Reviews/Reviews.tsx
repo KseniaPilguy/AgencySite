@@ -62,7 +62,7 @@ const Reviews = () => {
               <div className="line" />
               <h5>Matt Broan</h5>
               <StarsReview />
-              <p>I've had a call with Ksenia. Appreciate your opinian and new approaches to solve my issues. We created the React app with MUI. Now it works great.</p>
+              <p>I've had a call with Ksenia. Appreciate your opinion and new approaches to solve my issues. We created the React app with MUI. Now it works great.</p>
             </div>
           </div>
         </Slider>

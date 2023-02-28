@@ -28,23 +28,23 @@ const MobileHeader = ({onClose}: MobileHeaderI) => {
   return (
     <div className="mobile_header_container">
       <div className="navigation_menu flex">
-        <a className="navigation_text" onClick={handleOpenLink("/#services")}>
+        <a className="navigation_text" onClick={handleOpenLink(`${process.env.REACT_APP_HOSTED_LINK}#services`)}>
           {t("header.services")}
           <ArrowRight className="icon"/>
         </a>
-        <a className="navigation_text" onClick={handleOpenLink("/#projects")}>
+        <a className="navigation_text" onClick={handleOpenLink(`${process.env.REACT_APP_HOSTED_LINK}#projects`)}>
           {t("header.projects")}
           <ArrowRight className="icon"/>
         </a>
-        <a className="navigation_text" onClick={handleOpenLink("/#team")}>
+        <a className="navigation_text" onClick={handleOpenLink(`${process.env.REACT_APP_HOSTED_LINK}#team`)}>
           {t("header.team")}
           <ArrowRight className="icon"/>
         </a>
-        <a className="navigation_text" onClick={handleOpenLink("/#clients")}>
+        <a className="navigation_text" onClick={handleOpenLink(`${process.env.REACT_APP_HOSTED_LINK}#сlients`)}>
           {t("header.clients")}
           <ArrowRight className="icon"/>
         </a>
-        <a className="navigation_text" onClick={handleOpenLink("/#contact")}>
+        <a className="navigation_text" onClick={handleOpenLink(`${process.env.REACT_APP_HOSTED_LINK}#contact`)}>
           {t("header.contact")}
           <ArrowRight className="icon"/>
         </a>

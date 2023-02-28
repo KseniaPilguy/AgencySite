@@ -38,11 +38,11 @@ const Header = () => {
             </div>
           ) : (
             <div className="navigation_menu flex">
-              <a href={`${process.env.HOSTED_LINK}#services`}>{t("header.services")}</a>
-              <a href="/#projects">{t("header.projects")}</a>
-              <a href="/#team">{t("header.team")}</a>
-              <a href="/#clients">{t("header.clients")}</a>
-              <a href="/#contact">{t("header.contact")}</a>
+              <a href={`${process.env.REACT_APP_HOSTED_LINK}#services`}>{t("header.services")}</a>
+              <a href={`${process.env.REACT_APP_HOSTED_LINK}#projects`}>{t("header.projects")}</a>
+              <a href={`${process.env.REACT_APP_HOSTED_LINK}#team`}>{t("header.team")}</a>
+              <a href={`${process.env.REACT_APP_HOSTED_LINK}#clients`}>{t("header.clients")}</a>
+              <a href={`${process.env.REACT_APP_HOSTED_LINK}#contact`}>{t("header.contact")}</a>
             </div>
           )}
         </div>

@@ -65,8 +65,8 @@ const Banner = () => {
               <h5>{getTextWithBreakLines(t("banner.startWorkBlockTitle"))}</h5>
               <p>{t("banner.startWorkBlockDescription")}</p>
               <div className="buttons_container flex">
-                <a href="/#contact">{t("banner.startButton")}</a>
-                <a href="/#team">{t("banner.readMoreButton")}</a>
+                <a href={`${process.env.REACT_APP_HOSTED_LINK}#contact`}>{t("banner.startButton")}</a>
+                <a href={`${process.env.REACT_APP_HOSTED_LINK}#team`}>{t("banner.readMoreButton")}</a>
               </div>
             </div>
           </div>

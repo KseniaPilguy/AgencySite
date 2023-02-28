@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AgencySite/static/css/main.8ffa8c72.css",
+    "main.js": "/AgencySite/static/js/main.5b5d9ba1.js",
+    "static/media/flower-proj.png": "/AgencySite/static/media/flower-proj.8cc839f28f053b5397c7.png",
+    "static/media/sport-proj.png": "/AgencySite/static/media/sport-proj.af1c4600821d4cd1d2fc.png",
+    "static/media/article-proj.png": "/AgencySite/static/media/article-proj.10e8704694957cb8c36b.png",
+    "static/media/food.png": "/AgencySite/static/media/food.56570dc293926509f6bc.png",
+    "static/media/bike.png": "/AgencySite/static/media/bike.5128a069f5a46ee3f9f9.png",
+    "static/media/music.png": "/AgencySite/static/media/music.bf39e0f51daace72f15f.png",
+    "static/media/ballet.png": "/AgencySite/static/media/ballet.ff746a21b26aaba07863.png",
+    "static/media/yoga.png": "/AgencySite/static/media/yoga.8d357cc106d73eccbf20.png",
+    "static/media/cafe.png": "/AgencySite/static/media/cafe.8fb7b0251adc4ac90757.png",
+    "static/media/ksenia.jpeg": "/AgencySite/static/media/ksenia.2d8355f14ca0ce5ed06b.jpeg",
+    "static/media/viktoria.jpeg": "/AgencySite/static/media/viktoria.3b202273cb2c6b5d2fe9.jpeg",
+    "static/media/nikita.jpeg": "/AgencySite/static/media/nikita.20dfaef138055e8fa232.jpeg",
+    "static/media/united-states.png": "/AgencySite/static/media/united-states.a1fc118ed9c993844853.png",
+    "index.html": "/AgencySite/index.html",
+    "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.8ffa8c72.css.map": "/AgencySite/static/css/main.8ffa8c72.css.map",
+    "main.5b5d9ba1.js.map": "/AgencySite/static/js/main.5b5d9ba1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ffa8c72.css",
+    "static/js/main.5b5d9ba1.js"
+  ]
+}

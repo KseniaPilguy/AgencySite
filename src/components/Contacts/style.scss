@@ -1,0 +1,219 @@
+.contacts {
+  width: 100%;
+  background-color: var(--background);
+  position: relative;
+  .contacts_container {
+    position: relative;
+    .icon {
+      position: absolute;
+      right: -500px;
+      top: 0;
+      overflow: visible;
+      @media screen and (max-width: 470px) {
+        width: 300px;
+        right: 0;
+        top: -200px;
+      }
+    }
+    .contacts_wrapper {
+      width: 100%;
+      padding: 80px 0;
+      justify-content: space-between;
+      @media screen and (max-width: 1010px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and (max-width: 798px) {
+        padding: 40px 0;
+      }
+      .aside {
+        width: 50%;
+        min-width: 425px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 1010px) {
+          width: 100%;
+          min-width: auto;
+        }
+        &:first-of-type {
+          margin-right: 50px;
+          @media screen and (max-width: 1224px) {
+            margin-right: 20px;
+          }
+          @media screen and (max-width: 1010px) {
+            order: 2;
+            margin-right: 0;
+          }
+        }
+        &:last-of-type {
+          @media screen and (max-width: 1010px) {
+            order: 1;
+            margin-bottom: 50px;
+          }
+          @media screen and (max-width: 470px) {
+            margin-bottom: 70px;
+          }
+        }
+        .image {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 20px;
+          @media screen and (max-width: 798px) {
+            margin-bottom: 10px;
+          }
+          @media screen and (max-width: 798px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        h6 {
+          font-family: 'Krub', sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 29px;
+          letter-spacing: 0.5px;
+          margin: 0 0 8px;
+          color: var(--privary);
+          text-transform: uppercase;
+          @media screen and (max-width: 798px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        p {
+          font-family: 'Krub', sans-serif;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          margin: 0 0 30px;
+          color: var(--privary);
+        }
+        @media screen and (max-width: 798px) {
+          font-size: 12px;
+        }
+        .contact_card_half_wrapper {
+          margin: 50px 0;
+          
+          @media screen and (max-width: 1224px) {
+            margin: 20px 0;
+          }
+          @media screen and (max-width: 470px) {
+            flex-wrap: wrap;
+          }
+        }
+        .contact_card {
+          justify-content: center;
+          flex-direction: column;
+          background-color: var(--privary);
+          padding: 20px 0;
+          border-radius: 5px;
+          @media screen and (max-width: 470px) {
+            padding: 10px 0;
+          }
+          h4 {
+            font-family: 'Krub', sans-serif;;
+            font-weight: 600;
+            font-size: 30px;
+            letter-spacing: 0.5px;
+            margin: 0 0 8px;
+            color: var(--background);
+            text-transform: uppercase;
+            @media screen and (max-width: 798px) {
+              font-size: 20px;
+            }
+            @media screen and (max-width: 470px) {
+              font-size: 16px;
+            }
+          } 
+          p {
+            font-family: 'Krub', sans-serif;;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin: 0 0 8px;
+            color: var(--background);
+          }
+          &.contact_card_half {
+            width: 50%;
+            @media screen and (max-width: 470px) {
+              width: 100%;
+            }
+            &:first-of-type {
+              margin-right: 50px;
+              @media screen and (max-width: 1224px) {
+                margin-right: 20px;
+              }
+              @media screen and (max-width: 470px) {
+                margin: 0 0 20px 0;
+              }
+            }
+          }
+        }
+        .contact_form_container {
+          flex-direction: column;
+          .input {
+            width: calc(100% - 56px);
+            padding: 20px 25px;
+            outline: none;
+            border: 3px solid var(--secondary);
+            background-color: transparent;
+            margin-bottom: 40px;
+
+            font-family: 'Krub', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 3px;
+            color: var(--privary);
+            @media screen and (max-width: 1224px) {
+              margin-bottom: 20px;
+            }
+            @media screen and (max-width: 798px) {
+              font-size: 14px;
+            }
+            @media screen and (max-width: 798px) {
+              border: 2px solid var(--secondary);
+              padding: 15px 25px;
+            }
+            &.textarea {
+              height: 180px;
+              margin: 0;
+              @media screen and (max-width: 798px) {
+                height: 100px;
+              }
+            }
+            &.error {
+              border-color: red;
+            }
+          }
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            padding: 15px 40px;
+            margin-top: 40px;
+            background: var(--secondary);
+
+            font-family: 'Krub', sans-serif;;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--privary);
+            border: none;
+            cursor: pointer;
+            @media screen and (max-width: 1224px) {
+              margin-top: 20px;
+            }
+            @media screen and (max-width: 798px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

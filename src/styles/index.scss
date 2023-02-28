@@ -1,3 +1,94 @@
-@import "normalize-scss";
+@import "normalize.css/normalize.css";
+@import "animate.css";
 
-@import "_variables";
+@import "main";
+
+
+.dark-mode {
+  --secondary: #A460F9;
+  --privary: #FFFFFF;
+  --privary-durty: #F2F2F2;
+  --additional: #252525;
+  --background: #181818;
+}
+
+.light-mode {
+  --secondary: #3F51B5;
+  --privary: #181818;
+  --privary-durty: #252525;
+  --additional: #7B86E275;
+  --background: #E1E2EB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.application_wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 120px 60px;
+  @media screen and (max-width: 798px) {
+    padding: 80px 50px;
+  }
+  @media screen and (max-width: 668px) {
+    padding: 80px 10px;
+  }
+}
+
+.container_title {
+  font-family: 'Krub', sans-serif;;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: var(--privary);
+  margin: 0;
+  align-items: baseline;
+  @media screen and (max-width: 798px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.container_subtitle {
+  color: var(--secondary);
+  font-weight: 400;
+  font-size: 42px;
+  margin-left: 10px;
+  @media screen and (max-width: 798px) {
+    font-size: 30px;
+  }
+}
+
+#dot {
+  offset-path: path("M 475.289 86.7901 C 703.463 174.594 870.397 292.65 848.145 350.473 C 825.894 408.297 622.884 383.993 394.709 296.188 C 166.535 208.384 -0.399264 90.3285 21.8524 32.5051 C 44.1033 -25.3187 247.114 -1.01488 475.289 86.7901 Z");
+  animation: move 20s infinite linear;
+  fill: var(--secondary);
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  cursor: default;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}

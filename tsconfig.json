@@ -19,7 +19,11 @@
     "jsx": "react-jsx",
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": [
+      "node"
+    ]
   },
-  "include": ["src"]
+  "include": ["src"],
+  "typeRoots" : ["node_modules/@types", "src"]
 }

@@ -1,0 +1,34 @@
+.button_top {
+  position: fixed;
+  right: 0;
+  bottom: 150px;
+  background: var(--additional);
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  @media screen and (max-width: 798px) {
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+  }
+  cursor: pointer;
+  .button_top_container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    .icon_container {
+      width: 30px;
+      height: 30px;
+      @media screen and (max-width: 798px) {
+        width: 15px;
+        height: 15px;
+      }
+      .icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

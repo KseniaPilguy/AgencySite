@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: var(--secondary);
+  @media screen and (max-width: 798px) {
+    height: 80px;
+  }
+  .footer_container {
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    padding-top: 0;
+    p {
+      font-family: 'Krub', sans-serif;;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      margin: 0;
+      color: var(--privary);
+      text-transform: uppercase;
+      @media screen and (max-width: 798px) {
+        font-size: 10px;
+        line-height: 18px;
+        text-align: right;
+      }
+    }
+  }
+}

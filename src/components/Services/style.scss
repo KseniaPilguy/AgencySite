@@ -1,0 +1,147 @@
+.services {
+  width: 100%;
+  background-color: var(--background);
+  position: relative;
+  .services_container {
+    padding-bottom: 200px;
+    @media screen and (max-width: 530px) {
+      padding-bottom: 80px;
+    }
+    .top_text_container {
+      justify-content: space-between;
+      align-items: flex-end;
+      position: relative;
+      p {
+        font-family: 'Krub', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        color: var(--privary);
+        text-align: right;
+        text-transform: uppercase;
+        position: relative;
+        @media screen and (max-width: 880px) {
+          position: absolute;
+          right: 0;
+          top: -80px;
+        }
+        @media screen and (max-width: 798px) {
+          line-height: 20px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: 35px;
+          width: 12px;
+          height: 12px;
+          background: var(--privary);
+          @media screen and (max-width: 1110px) {
+            left: -5px;
+          }
+          @media screen and (max-width: 798px) {
+            left: -25px;
+          }
+        }
+        span {
+          font-weight: 700;
+          font-size: 20px;
+          @media screen and (max-width: 1110px) {
+            font-size: 16px;
+          }
+          @media screen and (max-width: 798px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .services_wrapper {
+      justify-content: space-between;
+      align-items: inherit;
+      padding-top: 80px;
+      @media screen and (max-width: 1500px) {
+        flex-wrap: wrap;
+        max-width: 800px;
+        width: auto;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 880px) {
+        justify-content: center;
+        max-width: 600px;
+      }
+      @media screen and (max-width: 530px) {
+        padding-top: 40px;
+      }
+      .service_card {
+        position: relative;
+        margin: 0 5px;
+        width: 360px;
+        border: 3px solid var(--privary);
+        @media screen and (max-width: 530px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .service_card_container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 50px 20px;
+          text-align: center;
+          .service_card_number {
+            position: absolute;
+            left: -1px;
+            top: -3px;
+            background-color: var(--privary);
+            padding: 7px 12px 7px 7px;
+            font-family: 'Krub', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: var(--background);
+          }
+          h3 {
+            font-family: 'Krub', sans-serif;
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 50px;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+            color: var(--privary);
+            position: relative;
+            @media screen and (max-width: 798px) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              width: 60px;
+              height: 3px;
+              background: var(--privary);
+              bottom: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+          p {
+            width: 120%;
+            font-family: 'Krub', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.5px;
+            color: var(--privary);
+            text-align: center;
+            @media screen and (max-width: 798px) {
+              font-size: 12px;
+              line-height: 20px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

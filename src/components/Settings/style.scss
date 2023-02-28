@@ -1,0 +1,85 @@
+.settings {
+  position: fixed;
+  left: 0;
+  top: 35%;
+  background: var(--additional);
+  width: 60px;
+  height: 300px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  cursor: pointer;
+  z-index: 999;
+  &.hovered {
+    width: 300px;
+    cursor: default;
+    .settings_container { 
+      justify-content: flex-start;
+      padding: 0 30px;
+      h2 {
+        display: none;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+  .settings_container {
+    height: 100%;
+    justify-content: center;
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      color: var(--privary);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      margin: 0;
+    }
+    .content_container {
+      &.hidden {
+        display: none;
+      }
+      p {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        margin: 0 0 8px;
+        color: var(--privary);
+        text-transform: uppercase;
+      }
+      .flag_container {
+        margin-bottom: 20px;
+        .flag_card {
+          width: 50px;
+          cursor: pointer;
+          &:first-of-type {
+            margin-right: 15px;
+          }
+          .image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .toggle {
+        width: 80px;
+        height: 35px;
+        border-radius: 40px;
+        background: var(--background);
+        margin-top: 10px;
+        cursor: pointer;
+        .switcher {
+          width: 35px;
+          height: 35px;
+          background: var(--privary-durty);
+          border-radius: 50%;
+          &.light_selected {
+            margin-right: 0;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "header": {
+    "services": "Services",
+    "team": "About",
+    "projects": "Projects",
+    "clients": "Clients",
+    "contact": "Contact Us"
+  },
+  "settings": {
+    "title": "Settings",
+    "selectLanguage": "Select language",
+    "selectTheme": "Theme mode"
+  },
+  "banner": {
+    "socialMediaBlockTitle": "Start meeting us on <br/> social media",
+    "socialMediaBlockDescription": "You can contact directly and get additional information in live format with our founder",
+    "startWorkBlockTitle": "Start working with us on <br/> your project",
+    "startWorkBlockDescription": "You can write to us right now or learn about team detailed before start",
+    "welcomeLabel": "Welcome",
+    "startButton": "Let´s start",
+    "readMoreButton": "Read more"
+  },
+  "achievements": {
+    "design": {
+      "adjective": "designed",
+      "noun": "layouts"
+    },
+    "develop": {
+      "adjective": "developed",
+      "noun": "projects"
+    },
+    "consulting": {
+      "adjective": "consultation",
+      "noun": "hours"
+    }
+  },
+  "exploring": {
+    "title": "Accept development",
+    "subtitle": "our",
+    "description": "realize your dream",
+    "realize": "realize",
+    "us": "with us"
+  },
+  "services": {
+    "title": "Find",
+    "subtitle": "own service.",
+    "opportunities": "More opportunities <br/> can be discussed",
+    "landingTitle": "Landing page",
+    "landingDescription": "Creating landing page by your wishes and design. We can add animation and use any selected UI library.",
+    "reactTitle": "React Platform",
+    "reactDescription": "Development complicated platforms with state management. Integrations with third party API.",
+    "designTitle": "Design creation",
+    "designDescription": "Realizating design templates for any selected topic with eye-catching results.",
+    "consultingTitle": "Consulting option",
+    "consultingDescription": "Book time for calling via most convenient platform and get the consulting advice for your project."
+  },
+  "team": {
+    "title": "WHY",
+    "subtitle": "us",
+    "note": "Meet with each of us below",
+    "description": "Our goal is to make a quality product that will meet <br/> your expectations. We strive to be the best and delight our customers.",
+    "kseniaTitle": "Ksenia Pilguy, <br/> Founder, React Developer",
+    "kseniaDescription": "Greetings! I'm a founder of this agency and will be the first with whom you'll be communicate. I have more than 5 years of experience working as a developer, so you just need to write us and relax.",
+    "nikitaTitle": "Mykyta Rediukhin, <br/> HTML developer",
+    "nikitaDescription": "Hello, nice to meet you. I help your business growing out with higher speed. Let's start to create your portfolios, landing pages or business cards.",
+    "viktoriaTitle": "Viktoria Chukat, <br/> Designer",
+    "viktoriaDescription": "Your bright design you can create with me. Just bring me you inspiration and wishes and I return amazing product."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "things we've made",
+    "development": "development",
+    "design": "design"
+  },
+  "reviews": {
+    "title": "What",
+    "subtitle": "clients think"
+  },
+  "contacts": {
+    "title": "Contact",
+    "subtitle": "us",
+    "addressLabel": "Our Address",
+    "addressData": "Ukraine, Lviv, 7 st. Kotlyarskaya 17, 79000",
+    "emailLabel": "Email Us",
+    "phoneLabel": "Call Us",
+    "contactBlockTitle": "Choose the best communication.",
+    "contactBlockDescription": "Please check ways to contact us directly.",
+    "emailBlockTitle": "You can write to us about anything.",
+    "emailBlockDescription": "Please provide correct data for better communication.",
+    "nameFormLabel": "NAME",
+    "emailFormLabel": "EMAIL",
+    "messageFormLabel": "MESSAGE",
+    "formButton": "Send message"
+  },
+  "footer": {
+    "rights": "ALL RIGHTS RESERVED."
+  }
+}

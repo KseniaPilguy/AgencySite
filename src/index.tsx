@@ -1,11 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+
+import { ThemeContextProvider } from 'context/ThemeContext';
 
 import App from './App';
+import './i18n/i18n';
+import './styles/index.scss';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container!); 
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <ThemeContextProvider>
+       <App />
+    </ThemeContextProvider>
+  </React.StrictMode>
 );

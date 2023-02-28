@@ -1,0 +1,145 @@
+.projects {
+  width: 100%;
+  background-color: var(--background);
+  .projects_container {
+    position: relative;
+    .circle {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    }
+    .top_section {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 80px;
+      @media screen and (max-width: 1224px) {
+        padding-bottom: 30px;
+      }
+      @media screen and (max-width: 798px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        text-align: right;
+        @media screen and (max-width: 798px) {
+          text-align: center;
+          br {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 620px) {
+          line-height: 45px;
+          margin-bottom: 30px;
+          br {
+            display: block;
+          }
+        }
+      }
+      h5 {
+        font-family: "Krub", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: 1px;
+        color: var(--privary);
+        text-transform: uppercase;
+        margin: 0;
+        @media screen and (max-width: 798px) {
+          order: 2;
+        }
+        @media screen and (max-width: 620px) {
+          margin-bottom: 30px;
+        }
+        .slash {
+          margin: 0 10px;
+        }
+        .element {
+          cursor: pointer;
+          &.active {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+    .project_cards_container {
+      width: 100%;
+      justify-content: space-between;
+      align-items: stretch;
+      @media screen and (max-width: 1224px) {
+        justify-content: center;
+      }
+      .slick-slider {
+        width: 100%;
+        .slick-active {
+          .aside_container {
+            @media screen and (max-width: 967px) {
+              margin: 0 auto;
+            }
+          }
+        }
+        .slick-arrow {
+          @media screen and (max-width: 620px) {
+            top: -30px;
+            display: block !important ;
+            &.slick-prev {
+              left: 15%;
+            }
+            &.slick-next {
+              right: 15%;
+            }
+          }
+        }
+      }
+      .aside_container {
+        width: 50%;
+        height: 800px;
+        @media screen and (max-width: 1224px) {
+          width: 95%;
+          height: 600px;
+        }
+        &:first-of-type {
+          margin-right: 10px;
+          @media screen and (max-width: 1224px) {
+            margin-right: 0;
+          }
+        }
+        .project_card {
+          position: relative;
+          width: 100%;
+          height: 800px;
+          border: 3px solid var(--secondary);
+          @media screen and (max-width: 1224px) {
+            height: 600px;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &.miniature {
+            width: calc(50% - 6px - 20px);
+            margin: 10px;
+            height: 387px;
+            &:nth-child(3),
+            &:nth-child(4) {
+              margin-bottom: 0;
+            }
+            &:nth-child(1),
+            &:nth-child(2) {
+              margin-top: 0;
+            }
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+          
+        }
+        &.miniatures_container {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

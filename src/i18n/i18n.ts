@@ -27,7 +27,7 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
     backend: {
-      loadPath: '/AgencySite/locales/en/translation.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json'
     },
   });
 

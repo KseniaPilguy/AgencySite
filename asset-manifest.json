@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AgencySite/static/css/main.8ffa8c72.css",
+    "main.css": "/AgencySite/static/css/main.6d61954b.css",
     "main.js": "/AgencySite/static/js/main.13b3183c.js",
     "static/media/flower-proj.png": "/AgencySite/static/media/flower-proj.8cc839f28f053b5397c7.png",
     "static/media/sport-proj.png": "/AgencySite/static/media/sport-proj.af1c4600821d4cd1d2fc.png",
@@ -17,11 +17,11 @@
     "static/media/united-states.png": "/AgencySite/static/media/united-states.a1fc118ed9c993844853.png",
     "index.html": "/AgencySite/index.html",
     "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.8ffa8c72.css.map": "/AgencySite/static/css/main.8ffa8c72.css.map",
+    "main.6d61954b.css.map": "/AgencySite/static/css/main.6d61954b.css.map",
     "main.13b3183c.js.map": "/AgencySite/static/js/main.13b3183c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ffa8c72.css",
+    "static/css/main.6d61954b.css",
     "static/js/main.13b3183c.js"
   ]
 }

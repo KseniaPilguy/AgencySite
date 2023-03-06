@@ -120,6 +120,9 @@
           &:hover {
             img {
               filter: brightness(0.25);
+              @media screen and (max-width: 1224px) {
+                filter: none;
+              }
             }
             .project_card_description {
               cursor: pointer;

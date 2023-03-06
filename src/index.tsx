@@ -6,6 +6,7 @@ import { ThemeContextProvider } from 'context/ThemeContext';
 import App from './App';
 import './i18n/i18n';
 import './styles/index.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container!); 

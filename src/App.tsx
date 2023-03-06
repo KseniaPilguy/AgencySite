@@ -13,6 +13,7 @@ import Footer from "components/Footer/Footer";
 import Settings from "components/Settings/Settings";
 import ButtonTop from "components/ButtonTop/ButtonTop";
 import { useMediaQuery } from "react-responsive";
+import { ToastContainer } from "react-toastify";
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
         <Team />
         <Reviews />
         <Contacts />
+        <ToastContainer />
       </div>
       <Footer />
     </div>

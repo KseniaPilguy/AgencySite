@@ -23,7 +23,7 @@ const ContactForm = () => {
       let emailSenderAvailableCount = localStorage.getItem("SENT_EMAIL") ? +localStorage.getItem("SENT_EMAIL")! : 3;
 
       if (emailSenderAvailableCount === 0) {
-        toast(t("contacts.emailMaxLimit"), {
+        toast(`${t("contacts.emailMaxLimit")}`, {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -55,7 +55,7 @@ const ContactForm = () => {
           emailSenderAvailableCount = emailSenderAvailableCount - 1;
           localStorage.setItem("SENT_EMAIL", `${emailSenderAvailableCount}`);
 
-          toast(t("contacts.emailSuccess"), {
+          toast(`${t("contacts.emailSuccess")}`, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -68,7 +68,7 @@ const ContactForm = () => {
         })
         .catch(() => {
             setIsLoading(false);
-            toast(t("contacts.emailFailed"), {
+            toast(`${t("contacts.emailFailed")}`, {
               position: "top-right",
               autoClose: 5000,
               hideProgressBar: false,

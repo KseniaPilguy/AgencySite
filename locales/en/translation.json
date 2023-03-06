@@ -91,7 +91,10 @@
     "nameFormLabel": "NAME",
     "emailFormLabel": "EMAIL",
     "messageFormLabel": "MESSAGE",
-    "formButton": "Send message"
+    "formButton": "Send message",
+    "emailSuccess": "Email was successfully sent",
+    "emailFailed": "Email was not sent. Please, try again",
+    "emailMaxLimit": "You have sent the maximum number of messages"
   },
   "footer": {
     "rights": "ALL RIGHTS RESERVED."

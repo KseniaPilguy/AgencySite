@@ -40,7 +40,7 @@ const ContactForm = () => {
       (async () => {
         setIsLoading(true);
         const data = {
-          subject: `Email from ${values.email}, ${values.name}`,
+          subject: `JOB REQUEST. Email: ${values.email}. Name: ${values.name}`,
           content: values.message
         }
         await fetch(emailRequestUrl, {

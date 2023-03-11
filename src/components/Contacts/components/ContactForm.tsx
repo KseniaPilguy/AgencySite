@@ -7,7 +7,7 @@ import RingLoader from "react-spinners/RingLoader";
 
 import { ContactFormI } from 'interface/interfaces';
 
-const emailRequestUrl = 'https://emailsender-env.eba-eraxmp2b.us-east-1.elasticbeanstalk.com/sender/send';
+const emailRequestUrl = 'http://emailsender-env.eba-eraxmp2b.us-east-1.elasticbeanstalk.com/sender/send';
 
 const ContactForm = () => {
   const { t } = useTranslation();

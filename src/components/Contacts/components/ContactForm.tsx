@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { toast } from 'react-toastify';
@@ -7,11 +8,11 @@ import RingLoader from "react-spinners/RingLoader";
 
 import { ContactFormI } from 'interface/interfaces';
 
-const emailRequestUrl = 'https://emailsender-env.eba-eraxmp2b.us-east-1.elasticbeanstalk.com/sender/send';
-
 const ContactForm = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
+
+  const form = useRef<HTMLFormElement>(null);
   
   const formik = useFormik<ContactFormI>({
     initialValues: {
@@ -39,18 +40,11 @@ const ContactForm = () => {
 
       (async () => {
         setIsLoading(true);
-        const data = {
-          subject: `JOB REQUEST. Email: ${values.email}. Name: ${values.name}`,
-          content: values.message
-        }
-        await fetch(emailRequestUrl, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(data), 
-        })
-        .then(() => {
+        if (!form.current) return; 
+
+        emailjs.sendForm('service_wv3f50o', 'template_g1g4cl4', form.current, 'v5yY47daZ3BHknBlb')
+        .then((result) => {
+          console.log(result)
           setIsLoading(false);
           emailSenderAvailableCount = emailSenderAvailableCount - 1;
           localStorage.setItem("SENT_EMAIL", `${emailSenderAvailableCount}`);
@@ -90,7 +84,7 @@ const ContactForm = () => {
 
 
   return (
-    <form onSubmit={formik.handleSubmit} className='contact_form_container flex'>
+    <form onSubmit={formik.handleSubmit} className='contact_form_container flex' ref={form}>
       <input
         type="text"
         name="name"

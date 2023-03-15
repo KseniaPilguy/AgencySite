@@ -50,10 +50,11 @@ const Contacts = () => {
             <h6>{t("contacts.contactBlockTitle")}</h6>
             <p>{t("contacts.contactBlockDescription")}</p>
           </div>
-          {/* <div className="aside">
+          <div className="aside">
             <h6>{t("contacts.emailBlockTitle")}</h6>
             <p>{t("contacts.emailBlockDescription")}</p>
-          </div> */}
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>

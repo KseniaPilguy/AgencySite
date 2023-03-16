@@ -4,9 +4,8 @@ import { useTranslation } from "react-i18next";
 import useElementOnScreen from "hooks/useElementOnScreen";
 import getTextWithBreakLines from "utils/getTextWithBreakLines";
 
-import nikita from "../../shared/assets/nikita.jpeg";
+import emptyPhone from "../../shared/assets/portrait.png";
 import ksenia from "../../shared/assets/ksenia.jpeg";
-import viktoria from "../../shared/assets/viktoria.jpeg";
 
 const Team = () => {
   const { t } = useTranslation();
@@ -47,7 +46,7 @@ const Team = () => {
           <div className="team_wrapper flex">
             <div className="team_card flex">
               <div className="image_container">
-                <img src={nikita} alt="team member" />
+                <img src={emptyPhone} alt="team member" />
               </div>
               <div className="team_mate_title">
                 <h6>{getTextWithBreakLines(t("team.nikitaTitle"))}</h6>
@@ -58,7 +57,7 @@ const Team = () => {
           <div className="team_wrapper flex">
             <div className="team_card flex">
               <div className="image_container">
-                <img src={viktoria} alt="team member" />
+                <img src={emptyPhone} alt="team member" />
               </div>
               <div className="team_mate_title">
                 <h6>{getTextWithBreakLines(t("team.viktoriaTitle"))}</h6>

@@ -10,11 +10,11 @@ import articleProject from "../../shared/assets/development/article-proj.png";
 import nftProject from "../../shared/assets/development/nft.png";
 import cryptoProject from "../../shared/assets/development/crypto.png";
 
+import nft from "../../shared/assets/design/nft.png";
+import arch from "../../shared/assets/design/arch.png";
 import bike from "../../shared/assets/design/bike.png";
-import cafe from "../../shared/assets/design/cafe.png";
 import food from "../../shared/assets/design/food.png";
-import music from "../../shared/assets/design/music.png";
-import yoga from "../../shared/assets/design/yoga.png";
+import hous from "../../shared/assets/design/hous.png";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -51,14 +51,30 @@ const Projects = () => {
       image: sportProject, 
       link: 'https://kseniapilguy.github.io/MARKUP-Sport/'
     }]
-    : [cafe, bike, music, yoga];
+    : [
+      {
+        image: arch, 
+        link: null
+      },
+      {
+        image: bike, 
+        link: null
+      },
+      {
+        image: hous, 
+        link: null
+      },
+      {
+        image: food, 
+        link: null
+      }];
 
   const initialEntity = activeEntity === Entities.development ? {
       image: nftProject, 
       link: 'https://kseniapilguy.github.io/MARKUP-NFT/'
     } : {
-      image: sportProject, 
-      link: 'https://kseniapilguy.github.io/MARKUP-Minimo/singlepost.html'
+      image: nft, 
+      link: null
     };
 
   const sliderSettings = {
@@ -73,7 +89,7 @@ const Projects = () => {
 
   const handleChangeEntity = (val: Entities) => () => setActiveEntity(val);
 
-  const handleProjectNavigate = (link: string) => () => window.open(link, "_blank");
+  const handleProjectNavigate = (link: string | null) => () => link && window.open(link, "_blank");
 
   return (
     <div className="projects" id="projects"
@@ -89,10 +105,10 @@ const Projects = () => {
             <span 
               className={`${activeEntity === Entities.development ? 'active' : ''} element`}
               onClick={handleChangeEntity(Entities.development)}>{t("projects.development")}</span>
-            {/* <span className="slash">/</span>
+            <span className="slash">/</span>
             <span 
               className={`${activeEntity === Entities.design ? 'active' : ''} element`}
-              onClick={handleChangeEntity(Entities.design)}>{t("projects.design")}</span> */}
+              onClick={handleChangeEntity(Entities.design)}>{t("projects.design")}</span>
           </h5>
           <h2 className="container_title">{t("projects.title")}<br />
             <span className="container_subtitle">{t("projects.subtitle")}</span>
@@ -116,18 +132,18 @@ const Projects = () => {
             <>
             <div className="aside_container">
               <div className="project_card" onClick={handleProjectNavigate(initialEntity.link)}>
-                <div className="project_card_description">
+                {initialEntity.link && <div className="project_card_description">
                   {t("projects.seeMore")}
-                </div>
+                </div>}
                 <img src={initialEntity.image} alt="project exapmle" />
               </div>
             </div>
             <div className="aside_container miniatures_container flex">
               {entytiesList.map((item, ind) => (
                 <div className="project_card miniature" key={ind} onClick={handleProjectNavigate(item.link)}>
-                  <div className="project_card_description">
+                  {initialEntity.link && <div className="project_card_description">
                     {t("projects.seeMore")}
-                </div>
+                  </div>}
                   <img src={item.image} alt="project exapmle" />
                 </div>
               ))}

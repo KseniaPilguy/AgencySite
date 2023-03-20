@@ -6,6 +6,7 @@ import getTextWithBreakLines from "utils/getTextWithBreakLines";
 
 import emptyPhone from "../../shared/assets/portrait.png";
 import ksenia from "../../shared/assets/ksenia.jpeg";
+import liza from "../../shared/assets/liza.jpg";
 
 const Team = () => {
   const { t } = useTranslation();
@@ -57,7 +58,7 @@ const Team = () => {
           <div className="team_wrapper flex">
             <div className="team_card flex">
               <div className="image_container">
-                <img src={emptyPhone} alt="team member" />
+                <img src={liza} alt="team member" />
               </div>
               <div className="team_mate_title">
                 <h6>{getTextWithBreakLines(t("team.viktoriaTitle"))}</h6>

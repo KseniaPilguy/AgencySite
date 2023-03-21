@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AgencySite/static/css/main.ca629672.css",
-    "main.js": "/AgencySite/static/js/main.53f8185a.js",
+    "main.css": "/AgencySite/static/css/main.435f7cc3.css",
+    "main.js": "/AgencySite/static/js/main.1d0569d4.js",
     "static/media/nft.png": "/AgencySite/static/media/nft.251b01d41d3538935a13.png",
     "static/media/sport-proj.png": "/AgencySite/static/media/sport-proj.af1c4600821d4cd1d2fc.png",
     "static/media/article-proj.png": "/AgencySite/static/media/article-proj.10e8704694957cb8c36b.png",
@@ -13,15 +13,15 @@
     "static/media/gocor.png": "/AgencySite/static/media/gocor.bfb7adfce148061bd9ce.png",
     "static/media/liza.jpg": "/AgencySite/static/media/liza.e79c5d528438f030192f.jpg",
     "static/media/ksenia.jpeg": "/AgencySite/static/media/ksenia.2d8355f14ca0ce5ed06b.jpeg",
-    "static/media/portrait.png": "/AgencySite/static/media/portrait.131c9319a22775762b74.png",
+    "static/media/nikita.jpeg": "/AgencySite/static/media/nikita.20dfaef138055e8fa232.jpeg",
     "static/media/united-states.png": "/AgencySite/static/media/united-states.a1fc118ed9c993844853.png",
     "index.html": "/AgencySite/index.html",
     "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.ca629672.css.map": "/AgencySite/static/css/main.ca629672.css.map",
-    "main.53f8185a.js.map": "/AgencySite/static/js/main.53f8185a.js.map"
+    "main.435f7cc3.css.map": "/AgencySite/static/css/main.435f7cc3.css.map",
+    "main.1d0569d4.js.map": "/AgencySite/static/js/main.1d0569d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca629672.css",
-    "static/js/main.53f8185a.js"
+    "static/css/main.435f7cc3.css",
+    "static/js/main.1d0569d4.js"
   ]
 }

@@ -30,8 +30,7 @@ const Header = () => {
     <div className={`header ${isHeaderHasOpacity ? "opacity" : ""}`}>
       <div className="header_container flex">
         <div className="wrapper flex">
-          <h1></h1>
-          
+          <h1><span>P</span>erfect</h1>
           {isTabletOrMobile ? (
             <div className="burger_menu_container" onClick={handleOpenMobile}>
               <BurgerMenu className="icon" />

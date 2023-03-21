@@ -30,6 +30,12 @@
     .wrapper {
       width: 100%;
       justify-content: space-between;
+      h1 {
+        font-family: "Krub", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 28px;
+      }
       .navigation_menu {
         a {
           text-transform: uppercase;

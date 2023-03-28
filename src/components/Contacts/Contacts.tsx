@@ -45,6 +45,7 @@ const Contacts = () => {
                 <Phone className="image" />
                 <h4>{t("contacts.phoneLabel")}</h4>
                 <p>+380507122882</p>
+                <p>+380975481048</p>
               </div>
             </div>
             <h6>{t("contacts.contactBlockTitle")}</h6>

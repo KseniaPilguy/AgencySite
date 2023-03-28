@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AgencySite/static/css/main.435f7cc3.css",
-    "main.js": "/AgencySite/static/js/main.1d0569d4.js",
+    "main.js": "/AgencySite/static/js/main.7effbf4c.js",
     "static/media/nft.png": "/AgencySite/static/media/nft.251b01d41d3538935a13.png",
     "static/media/sport-proj.png": "/AgencySite/static/media/sport-proj.af1c4600821d4cd1d2fc.png",
     "static/media/article-proj.png": "/AgencySite/static/media/article-proj.10e8704694957cb8c36b.png",
@@ -18,10 +18,10 @@
     "index.html": "/AgencySite/index.html",
     "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.435f7cc3.css.map": "/AgencySite/static/css/main.435f7cc3.css.map",
-    "main.1d0569d4.js.map": "/AgencySite/static/js/main.1d0569d4.js.map"
+    "main.7effbf4c.js.map": "/AgencySite/static/js/main.7effbf4c.js.map"
   },
   "entrypoints": [
     "static/css/main.435f7cc3.css",
-    "static/js/main.1d0569d4.js"
+    "static/js/main.7effbf4c.js"
   ]
 }

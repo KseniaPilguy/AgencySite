@@ -4,17 +4,14 @@ import Slider from "react-slick";
 
 import useElementOnScreen from "hooks/useElementOnScreen";
 
-import goProject from "../../shared/assets/development/gocor.png";
-import sportProject from "../../shared/assets/development/sport-proj.png";
-import articleProject from "../../shared/assets/development/article-proj.png";
-import nftProject from "../../shared/assets/development/nft.png";
-import cryptoProject from "../../shared/assets/development/crypto.png";
-
-import nft from "../../shared/assets/design/nft.png";
-import arch from "../../shared/assets/design/arch.png";
-import bike from "../../shared/assets/design/bike.png";
-import food from "../../shared/assets/design/food.png";
-import hous from "../../shared/assets/design/hous.png";
+import proj1 from "../../shared/assets/development/1.jpg";
+import proj2 from "../../shared/assets/development/2.jpg";
+import proj3 from "../../shared/assets/development/3.jpg";
+import proj4 from "../../shared/assets/development/4.jpg";
+import proj5 from "../../shared/assets/development/5.jpg";
+import proj6 from "../../shared/assets/development/6.jpg";
+import proj7 from "../../shared/assets/development/7.jpg";
+import proj8 from "../../shared/assets/development/8.jpg";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -34,48 +31,39 @@ const Projects = () => {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
   const isMobile = useMediaQuery({ maxWidth: 967 });
 
-  const entytiesList = activeEntity === Entities.development ? [
+  const entytiesList = [
     {
-      image: cryptoProject, 
-      link: 'https://kseniapilguy.github.io/MARKUP-Crypto/'
+      image: proj1, 
+      link: 'https://kseniapilguy.github.io/car-repair-project/'
     },
     {
-      image: goProject, 
-      link: 'https://kseniapilguy.github.io/MARKUP-GoCorona/'
+      image: proj2, 
+      link: 'https://kseniapilguy.github.io/construction-company-project/'
     },
     {
-      image: articleProject, 
-      link: 'https://kseniapilguy.github.io/MARKUP-Minimo/'
+      image: proj3, 
+      link: 'https://kseniapilguy.github.io/ecommerce-html-project/'
     },
     {
-      image: sportProject, 
-      link: 'https://kseniapilguy.github.io/MARKUP-Sport/'
-    }]
-    : [
-      {
-        image: arch, 
-        link: null
-      },
-      {
-        image: bike, 
-        link: null
-      },
-      {
-        image: hous, 
-        link: null
-      },
-      {
-        image: food, 
-        link: null
-      }];
-
-  const initialEntity = activeEntity === Entities.development ? {
-      image: nftProject, 
-      link: 'https://kseniapilguy.github.io/MARKUP-NFT/'
-    } : {
-      image: nft, 
-      link: null
-    };
+      image: proj4, 
+      link: 'https://kseniapilguy.github.io/online-education-project/'
+    },
+    {
+      image: proj5, 
+      link: 'https://kseniapilguy.github.io/online-shop-project/'
+    },
+    {
+      image: proj6, 
+      link: 'https://kseniapilguy.github.io/organic-farm-project/'
+    },
+    {
+      image: proj7, 
+      link: 'https://kseniapilguy.github.io/pet-care-project/'
+    },
+    {
+      image: proj8, 
+      link: 'https://kseniapilguy.github.io/laundry-service-project/'
+    }];
 
   const sliderSettings = {
     dots: false,
@@ -105,10 +93,6 @@ const Projects = () => {
             <span 
               className={`${activeEntity === Entities.development ? 'active' : ''} element`}
               onClick={handleChangeEntity(Entities.development)}>{t("projects.development")}</span>
-            <span className="slash">/</span>
-            <span 
-              className={`${activeEntity === Entities.design ? 'active' : ''} element`}
-              onClick={handleChangeEntity(Entities.design)}>{t("projects.design")}</span>
           </h5>
           <h2 className="container_title">{t("projects.title")}<br />
             <span className="container_subtitle">{t("projects.subtitle")}</span>
@@ -118,7 +102,7 @@ const Projects = () => {
         <div className="project_cards_container flex">
           {isTabletOrMobile ? (
             <Slider {...sliderSettings}>
-              {[...entytiesList, initialEntity].map((item, ind) => (
+              {entytiesList.map((item, ind) => (
                 <div key={ind}>
                   <div className="aside_container" onClick={handleProjectNavigate(item.link)}>
                     <div className="project_card">
@@ -130,20 +114,12 @@ const Projects = () => {
             </Slider>
           ) : (
             <>
-            <div className="aside_container">
-              <div className="project_card" onClick={handleProjectNavigate(initialEntity.link)}>
-                {initialEntity.link && <div className="project_card_description">
-                  {t("projects.seeMore")}
-                </div>}
-                <img src={initialEntity.image} alt="project exapmle" />
-              </div>
-            </div>
             <div className="aside_container miniatures_container flex">
               {entytiesList.map((item, ind) => (
                 <div className="project_card miniature" key={ind} onClick={handleProjectNavigate(item.link)}>
-                  {initialEntity.link && <div className="project_card_description">
+                  <div className="project_card_description">
                     {t("projects.seeMore")}
-                  </div>}
+                  </div>
                   <img src={item.image} alt="project exapmle" />
                 </div>
               ))}

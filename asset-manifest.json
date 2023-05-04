@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/AgencySite/static/css/main.435f7cc3.css",
-    "main.js": "/AgencySite/static/js/main.7effbf4c.js",
-    "static/media/nft.png": "/AgencySite/static/media/nft.251b01d41d3538935a13.png",
-    "static/media/sport-proj.png": "/AgencySite/static/media/sport-proj.af1c4600821d4cd1d2fc.png",
-    "static/media/article-proj.png": "/AgencySite/static/media/article-proj.10e8704694957cb8c36b.png",
-    "static/media/bike.png": "/AgencySite/static/media/bike.5128a069f5a46ee3f9f9.png",
-    "static/media/food.png": "/AgencySite/static/media/food.56570dc293926509f6bc.png",
-    "static/media/crypto.png": "/AgencySite/static/media/crypto.57055f51c8ebe7d41f88.png",
-    "static/media/arch.png": "/AgencySite/static/media/arch.e7333947c581c1ae61b6.png",
-    "static/media/hous.png": "/AgencySite/static/media/hous.cf3378275b5e8c3c6771.png",
-    "static/media/gocor.png": "/AgencySite/static/media/gocor.bfb7adfce148061bd9ce.png",
+    "main.css": "/AgencySite/static/css/main.c963045e.css",
+    "main.js": "/AgencySite/static/js/main.f09ca779.js",
+    "static/media/1.jpg": "/AgencySite/static/media/1.05bce347fc2522a840cf.jpg",
+    "static/media/6.jpg": "/AgencySite/static/media/6.2f22710ef0bbc43d29fa.jpg",
+    "static/media/2.jpg": "/AgencySite/static/media/2.5ee0c843ea52ec6100cc.jpg",
+    "static/media/7.jpg": "/AgencySite/static/media/7.b78d6e72fa4c02906318.jpg",
+    "static/media/3.jpg": "/AgencySite/static/media/3.ea8905b4743b5a790817.jpg",
+    "static/media/5.jpg": "/AgencySite/static/media/5.b7dff7aa4be43ed93ef5.jpg",
+    "static/media/4.jpg": "/AgencySite/static/media/4.9f25ef2d0a6d2677dc1b.jpg",
+    "static/media/8.jpg": "/AgencySite/static/media/8.75179fbb34a669493860.jpg",
     "static/media/liza.jpg": "/AgencySite/static/media/liza.e79c5d528438f030192f.jpg",
     "static/media/ksenia.jpeg": "/AgencySite/static/media/ksenia.2d8355f14ca0ce5ed06b.jpeg",
     "static/media/nikita.jpeg": "/AgencySite/static/media/nikita.20dfaef138055e8fa232.jpeg",
     "static/media/united-states.png": "/AgencySite/static/media/united-states.a1fc118ed9c993844853.png",
     "index.html": "/AgencySite/index.html",
     "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.435f7cc3.css.map": "/AgencySite/static/css/main.435f7cc3.css.map",
-    "main.7effbf4c.js.map": "/AgencySite/static/js/main.7effbf4c.js.map"
+    "main.c963045e.css.map": "/AgencySite/static/css/main.c963045e.css.map",
+    "main.f09ca779.js.map": "/AgencySite/static/js/main.f09ca779.js.map"
   },
   "entrypoints": [
-    "static/css/main.435f7cc3.css",
-    "static/js/main.7effbf4c.js"
+    "static/css/main.c963045e.css",
+    "static/js/main.f09ca779.js"
   ]
 }

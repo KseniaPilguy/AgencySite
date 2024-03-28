@@ -15,18 +15,20 @@ import ButtonTop from "components/ButtonTop/ButtonTop";
 import { useMediaQuery } from "react-responsive";
 import { ToastContainer } from "react-toastify";
 
-
 const App = () => {
   const [isButtonTopVisible, setIsButtonTopVisible] = useState(false);
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
 
   window.onscroll = () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+    ) {
       return setIsButtonTopVisible(true);
-    } 
-    
+    }
+
     setIsButtonTopVisible(false);
-  }
+  };
 
   return (
     <div className="App">
@@ -39,7 +41,7 @@ const App = () => {
         <ExploringContainer />
         <Services />
         <Projects />
-        <Team />
+        {/* <Team /> */}
         <Reviews />
         <Contacts />
         <ToastContainer />
@@ -47,6 +49,6 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

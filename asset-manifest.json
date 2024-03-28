@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AgencySite/static/css/main.89863d22.css",
-    "main.js": "/AgencySite/static/js/main.92c1b1bc.js",
+    "main.js": "/AgencySite/static/js/main.e6ce1286.js",
     "static/media/6.jpg": "/AgencySite/static/media/6.2f22710ef0bbc43d29fa.jpg",
     "static/media/1.png": "/AgencySite/static/media/1.3203981a732d6cff6e1f.png",
     "static/media/2.jpg": "/AgencySite/static/media/2.5ee0c843ea52ec6100cc.jpg",
@@ -10,16 +10,14 @@
     "static/media/5.jpg": "/AgencySite/static/media/5.b7dff7aa4be43ed93ef5.jpg",
     "static/media/4.jpg": "/AgencySite/static/media/4.9f25ef2d0a6d2677dc1b.jpg",
     "static/media/8.jpg": "/AgencySite/static/media/8.75179fbb34a669493860.jpg",
-    "static/media/liza.jpg": "/AgencySite/static/media/liza.b46af8cb7ec73e865f67.jpg",
-    "static/media/ksenia.jpeg": "/AgencySite/static/media/ksenia.2d8355f14ca0ce5ed06b.jpeg",
     "static/media/united-states.png": "/AgencySite/static/media/united-states.a1fc118ed9c993844853.png",
     "index.html": "/AgencySite/index.html",
     "static/media/getFetch.cjs": "/AgencySite/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.89863d22.css.map": "/AgencySite/static/css/main.89863d22.css.map",
-    "main.92c1b1bc.js.map": "/AgencySite/static/js/main.92c1b1bc.js.map"
+    "main.e6ce1286.js.map": "/AgencySite/static/js/main.e6ce1286.js.map"
   },
   "entrypoints": [
     "static/css/main.89863d22.css",
-    "static/js/main.92c1b1bc.js"
+    "static/js/main.e6ce1286.js"
   ]
 }
